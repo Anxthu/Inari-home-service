@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useAuth } from '../context/AuthContext';
-import { User, Mail, Phone, MapPin, ShieldCheck, CreditCard, LogOut, Pencil, X, Check } from 'lucide-react';
+import { User, Mail, Phone, MapPin, ShieldCheck, CreditCard, LogOut, Pencil, X, Check, Settings, Bell, HelpCircle, ChevronRight } from 'lucide-react';
 import { Navigate, useNavigate } from 'react-router-dom';
 
 export default function Profile() {
@@ -207,6 +207,43 @@ export default function Profile() {
                 </button>
               </div>
             )}
+
+          </div>
+
+            {/* Support & Settings */}
+            <div className="bg-white rounded-[32px] p-8 border border-slate-200/60 shadow-sm mt-6">
+              <h3 className="text-lg font-bold text-slate-900 mb-6 flex items-center gap-2">
+                <Settings size={20} className="text-[#283628]" /> Account Preferences
+              </h3>
+              
+              <div className="space-y-2">
+                <button className="w-full p-4 flex items-center justify-between rounded-2xl hover:bg-slate-50 transition-colors border border-transparent hover:border-slate-200">
+                  <div className="flex items-center gap-4">
+                    <div className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600">
+                      <Bell size={18} />
+                    </div>
+                    <div className="text-left">
+                      <p className="font-bold text-slate-900">Notifications</p>
+                      <p className="text-sm text-slate-500">Manage SMS and email alerts</p>
+                    </div>
+                  </div>
+                  <ChevronRight size={20} className="text-slate-400" />
+                </button>
+
+                <button className="w-full p-4 flex items-center justify-between rounded-2xl hover:bg-slate-50 transition-colors border border-transparent hover:border-slate-200">
+                  <div className="flex items-center gap-4">
+                    <div className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-600">
+                      <HelpCircle size={18} />
+                    </div>
+                    <div className="text-left">
+                      <p className="font-bold text-slate-900">Help & Support</p>
+                      <p className="text-sm text-slate-500">Contact customer service</p>
+                    </div>
+                  </div>
+                  <ChevronRight size={20} className="text-slate-400" />
+                </button>
+              </div>
+            </div>
 
           </div>
 
