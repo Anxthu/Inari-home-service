@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { ArrowUpRight, CheckCircle2, ShieldCheck, Zap } from 'lucide-react';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 
 const services = [
@@ -81,6 +81,30 @@ const services = [
 export default function Services() {
   const headerRef = useRef<HTMLDivElement>(null);
   const cardsRef = useRef<HTMLDivElement>(null);
+  const [activeFilter, setActiveFilter] = useState('All Services');
+
+  const filteredServices = services.filter(service => {
+    if (activeFilter === 'All Services') return true;
+    if (activeFilter === 'Most Popular') return parseFloat(service.rating) >= 4.9;
+    if (activeFilter === 'Under ₹500') {
+      const priceMatch = service.price.match(/₹(\d+,?\d*)/);
+      if (priceMatch) {
+        const numericPrice = parseInt(priceMatch[1].replace(',', ''), 10);
+        return numericPrice < 500;
+      }
+      return false;
+    }
+    if (activeFilter === 'Premium') {
+      if (service.price === 'Custom Quote') return true;
+      const priceMatch = service.price.match(/₹(\d+,?\d*)/);
+      if (priceMatch) {
+        const numericPrice = parseInt(priceMatch[1].replace(',', ''), 10);
+        return numericPrice >= 500;
+      }
+      return true;
+    }
+    return true;
+  });
 
   useEffect(() => {
     if (headerRef.current) {
@@ -123,11 +147,12 @@ export default function Services() {
         </div>
 
         <div className="flex gap-3 overflow-x-auto pb-4 mb-16 scrollbar-hide">
-          {['All Services', 'Most Popular', 'Under ₹500', 'Premium'].map((filter, i) => (
+          {['All Services', 'Most Popular', 'Under ₹500', 'Premium'].map((filter) => (
             <button
               key={filter}
+              onClick={() => setActiveFilter(filter)}
               className={`flex-shrink-0 px-8 py-3.5 rounded-full font-bold text-sm transition-colors border ${
-                i === 0 
+                activeFilter === filter 
                   ? 'bg-[#283628] text-white border-[#283628] shadow-md' 
                   : 'bg-white text-slate-600 border-slate-200 hover:border-slate-300'
               }`}
@@ -139,7 +164,7 @@ export default function Services() {
 
         {/* Services Grid */}
         <div ref={cardsRef} className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-8">
-          {services.map((service) => (
+          {filteredServices.map((service) => (
             <div key={service.id} className="bg-white rounded-[32px] overflow-hidden border border-slate-200/50 shadow-sm hover:shadow-xl transition-all duration-300 group flex flex-col h-full">
               
               {/* Image Header */}

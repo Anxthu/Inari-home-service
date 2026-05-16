@@ -88,6 +88,8 @@ export default function ProNavbar() {
               <button
                 onClick={() => setIsProfileOpen(!isProfileOpen)}
                 className="flex items-center gap-3 pl-3 pr-4 py-2 rounded-xl bg-slate-50 border border-slate-200/50 hover:bg-slate-100 transition-colors"
+                aria-label="Toggle user profile menu"
+                aria-expanded={isProfileOpen}
               >
                 <div className="w-8 h-8 rounded-full bg-[#283628] text-white flex items-center justify-center text-xs font-bold">
                   {user?.name.charAt(0)}
@@ -116,6 +118,8 @@ export default function ProNavbar() {
           <button
             className="md:hidden relative z-50 w-10 h-10 flex items-center justify-center text-slate-900"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+            aria-expanded={isMobileMenuOpen}
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>

@@ -46,6 +46,8 @@ export default function Navbar() {
             <button 
               className="md:hidden relative z-50 flex items-center justify-center text-slate-900"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+              aria-expanded={isMobileMenuOpen}
             >
               {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -100,6 +102,8 @@ export default function Navbar() {
               <button 
                 onClick={() => setIsProfileDropdownOpen(!isProfileDropdownOpen)}
                 className="pl-4 pr-1 py-1 rounded-full bg-white flex items-center gap-3 border border-slate-200/60 shadow-sm hover:bg-slate-50 transition-colors ml-2"
+                aria-label="Toggle user profile menu"
+                aria-expanded={isProfileDropdownOpen}
               >
                 <span className="text-sm font-semibold text-slate-700">{user ? user.name.split(' ')[0] : 'Account'}</span>
                 <img 
