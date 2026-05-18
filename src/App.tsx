@@ -26,7 +26,11 @@ gsap.registerPlugin(ScrollTrigger);
 function ScrollToTop() {
   const { pathname } = useLocation();
   useEffect(() => {
-    window.scrollTo(0, 0);
+    if ((window as any).lenis) {
+      (window as any).lenis.scrollTo(0, { immediate: true });
+    } else {
+      window.scrollTo(0, 0);
+    }
   }, [pathname]);
   return null;
 }
@@ -120,6 +124,7 @@ function App() {
     });
 
     lenis.on('scroll', ScrollTrigger.update);
+    (window as any).lenis = lenis;
 
     gsap.ticker.add((time) => {
       lenis.raf(time * 1000);
@@ -129,6 +134,7 @@ function App() {
 
     return () => {
       lenis.destroy();
+      delete (window as any).lenis;
       gsap.ticker.remove(lenis.raf);
     };
   }, []);
