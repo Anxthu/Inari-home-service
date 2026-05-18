@@ -57,11 +57,11 @@ export default function Contact() {
         <div ref={headerRef} className="mb-20 md:mb-32" style={{ perspective: '1000px' }}>
           <p className="text-sm font-bold uppercase tracking-[0.3em] text-slate-400 mb-8 word-reveal">Contact Us</p>
           <h1 className="text-6xl md:text-[90px] lg:text-[110px] font-bold tracking-tight text-[#283628] leading-[0.95] overflow-hidden mb-8">
-            <span className="word-reveal inline-block">Let's </span>
-            <span className="word-reveal inline-block">start </span>
+            <span className="word-reveal inline-block">Let's&nbsp;</span>
+            <span className="word-reveal inline-block">start&nbsp;</span>
             <span className="word-reveal inline-block">a</span>
             <br />
-            <span className="word-reveal inline-block text-slate-300">conversation.</span>
+            <span className="word-reveal inline-block text-slate-300 mt-2">conversation.</span>
           </h1>
           <p className="text-xl md:text-2xl text-slate-500 font-medium max-w-2xl word-reveal leading-relaxed">
             Whether you need assistance with a booking, want to partner with us, or just want to drop by our HQ.
