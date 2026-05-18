@@ -19,7 +19,7 @@ const services = [
     description: 'Expert AC maintenance to keep your cooling optimal. Includes foam jet cleaning, gas pressure check, and filter sanitization.',
     price: 'Starting at ₹499',
     rating: '4.8',
-    image: '/ac_repair.png',
+    image: 'ac_repair.png',
     includes: ['30-day warranty', 'Genuine spare parts', 'No hidden fees']
   },
   {
@@ -46,7 +46,7 @@ const services = [
     description: 'Transform your space with our premium painting services. We handle everything from wall prep to the final coat and post-paint cleanup.',
     price: 'Custom Quote',
     rating: '4.9',
-    image: '/painting_serivecs.png',
+    image: 'painting_serivecs.png',
     includes: ['Free consultation', 'Premium paints', 'Furniture masking']
   },
   {
@@ -55,7 +55,7 @@ const services = [
     description: 'Safe, odorless, and highly effective pest control treatments. Say goodbye to cockroaches, termites, and mosquitoes.',
     price: 'Starting at ₹899',
     rating: '4.7',
-    image: '/pest_control.png',
+    image: 'pest_control.png',
     includes: ['Odorless chemicals', 'Pet & child safe', '90-day guarantee']
   },
   {
@@ -64,7 +64,7 @@ const services = [
     description: 'Expert carpentry solutions for your home. From custom furniture assembly to door repairs and modular fittings.',
     price: 'Starting at ₹299',
     rating: '4.8',
-    image: '/carpenting_service.png',
+    image: 'carpenting_service.png',
     includes: ['Custom designs', 'Premium wood options', 'Expert craftsmanship']
   },
   {

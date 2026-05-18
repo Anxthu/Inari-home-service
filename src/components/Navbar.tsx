@@ -53,7 +53,7 @@ export default function Navbar() {
             </button>
 
             <Link to="/" className="flex-shrink-0 relative z-50 mr-4">
-              <img src="/Inari%20Logo_black.png" alt="Inari" className="h-6 transition-all" />
+              <img src="Inari%20Logo_black.png" alt="Inari" className="h-6 transition-all" />
             </Link>
 
             <nav className="hidden lg:flex items-center gap-8 text-sm font-semibold text-slate-600 mr-4">

@@ -208,10 +208,8 @@ export default function Profile() {
               </div>
             )}
 
-          </div>
-
             {/* Support & Settings */}
-            <div className="bg-white rounded-[32px] p-8 border border-slate-200/60 shadow-sm mt-6">
+            <div className="bg-white rounded-[32px] p-8 border border-slate-200/60 shadow-sm">
               <h3 className="text-lg font-bold text-slate-900 mb-6 flex items-center gap-2">
                 <Settings size={20} className="text-[#283628]" /> Account Preferences
               </h3>

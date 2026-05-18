@@ -77,7 +77,7 @@ export default function LoadingScreen({ onComplete }: { onComplete: () => void }
       <div className="relative z-10 flex flex-col items-center gap-8">
         <img 
           ref={logoRef}
-          src="/logo-highres.png" 
+          src="logo-highres.png" 
           alt="Inari" 
           className="w-24 md:w-32 h-auto object-contain drop-shadow-2xl brightness-0 invert"
         />

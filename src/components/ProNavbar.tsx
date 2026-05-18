@@ -48,7 +48,7 @@ export default function ProNavbar() {
         <div className="max-w-[1400px] mx-auto px-4 md:px-6 flex items-center justify-between">
           {/* Logo */}
           <Link to="/pro-dashboard" className="flex items-center gap-3 relative z-50">
-            <img src="/logo-black.png" alt="Inari" className="h-6 md:h-7" />
+            <img src="logo-black.png" alt="Inari" className="h-6 md:h-7" />
             <span className="hidden sm:inline-block px-2.5 py-1 rounded-lg bg-[#283628] text-white text-[10px] font-bold uppercase tracking-wider">Pro</span>
           </Link>
 

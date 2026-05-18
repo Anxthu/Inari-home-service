@@ -211,7 +211,7 @@ export default function About() {
             <div className="lg:col-span-7">
                <div className="story-img rounded-[32px] overflow-hidden h-[300px] md:h-[450px] relative mb-12">
                 <img 
-                  src="/group.png" 
+                  src="group.png" 
                   alt="Inari Team" 
                   className="absolute inset-0 w-full h-[120%] -top-[10%] object-cover will-change-transform"
                 />
@@ -305,7 +305,7 @@ export default function About() {
               </div>
             </div>
             <div className="gallery-item md:col-span-4 rounded-[32px] overflow-hidden relative group min-h-[400px]">
-              <img src="/ac_repair2.webp" alt="AC Professional" className="absolute inset-0 w-full h-[120%] -top-[10%] object-cover transition-transform duration-700 will-change-transform" />
+              <img src="ac_repair2.webp" alt="AC Professional" className="absolute inset-0 w-full h-[120%] -top-[10%] object-cover transition-transform duration-700 will-change-transform" />
             </div>
           </div>
         </section>
