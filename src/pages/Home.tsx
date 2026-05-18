@@ -55,22 +55,22 @@ export default function Home() {
       centerBottomCard: { tag: "SAFETY FIRST", title: "Fan Installation", desc: "Ceiling and exhaust fan setup with warranty.", image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=400&auto=format&fit=crop" }
     },
     'painting': {
-      leftCard: { title: "Painting", price: "Custom", rating: "4.9", serviceName: "Wall Painting", image: "/painting_serivecs.png" },
-      centerTopCard: { title: "Interior Painting", subtitle: "Premium paints with a flawless finish", image: "/painting_serivecs.png", rating: "4.9" },
-      centerBottomCard: { tag: "TRANSFORM", title: "Texture Painting", desc: "Designer textures to elevate any room.", image: "/painting_serivecs.png" }
+      leftCard: { title: "Painting", price: "Custom", rating: "4.9", serviceName: "Wall Painting", image: "painting_serivecs.png" },
+      centerTopCard: { title: "Interior Painting", subtitle: "Premium paints with a flawless finish", image: "painting_serivecs.png", rating: "4.9" },
+      centerBottomCard: { tag: "TRANSFORM", title: "Texture Painting", desc: "Designer textures to elevate any room.", image: "painting_serivecs.png" }
     },
     'ac-service': {
-      leftCard: { title: "AC Service", price: "₹499", rating: "4.8", serviceName: "Foam Jet Clean", image: "/ac_repair.png" },
-      centerTopCard: { title: "AC Repair", subtitle: "Gas refill and compressor check", image: "/ac_repair2.webp", rating: "4.7" },
-      centerBottomCard: { tag: "QUICK FIX", title: "AC Installation", desc: "Professional setup for split & window units.", image: "/ac_repair.png" }
+      leftCard: { title: "AC Service", price: "₹499", rating: "4.8", serviceName: "Foam Jet Clean", image: "ac_repair.png" },
+      centerTopCard: { title: "AC Repair", subtitle: "Gas refill and compressor check", image: "ac_repair2.webp", rating: "4.7" },
+      centerBottomCard: { tag: "QUICK FIX", title: "AC Installation", desc: "Professional setup for split & window units.", image: "ac_repair.png" }
     },
     'carpentry': {
-      leftCard: { title: "Carpentry", price: "₹299", rating: "4.8", serviceName: "Furniture Repair", image: "/carpenting_service.png" },
-      centerTopCard: { title: "Custom Furniture", subtitle: "Bespoke shelves, cabinets and fittings", image: "/carpenting_service.png", rating: "4.8" },
-      centerBottomCard: { tag: "CRAFTED", title: "Door & Window Fix", desc: "Hinge replacement, alignment and polishing.", image: "/carpenting_service.png" }
+      leftCard: { title: "Carpentry", price: "₹299", rating: "4.8", serviceName: "Furniture Repair", image: "carpenting_service.png" },
+      centerTopCard: { title: "Custom Furniture", subtitle: "Bespoke shelves, cabinets and fittings", image: "carpenting_service.png", rating: "4.8" },
+      centerBottomCard: { tag: "CRAFTED", title: "Door & Window Fix", desc: "Hinge replacement, alignment and polishing.", image: "carpenting_service.png" }
     },
     'pest-control': {
-      leftCard: { title: "Pest Control", price: "₹899", rating: "4.7", serviceName: "Full Home Treatment", image: "/pest_control.png" },
+      leftCard: { title: "Pest Control", price: "₹899", rating: "4.7", serviceName: "Full Home Treatment", image: "pest_control.png" },
       centerTopCard: { title: "Cockroach Control", subtitle: "Odorless gel treatment with 90-day warranty", image: "https://images.unsplash.com/photo-1585771724684-38269d6639fd?q=80&w=800&auto=format&fit=crop", rating: "4.7" },
       centerBottomCard: { tag: "SAFE", title: "Termite Shield", desc: "Deep anti-termite treatment for wood and walls.", image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=400&auto=format&fit=crop" }
     },
